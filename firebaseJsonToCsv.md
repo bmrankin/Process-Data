@@ -4,6 +4,7 @@
 < filename2.json jq .
 sed 's/}/},/g' filename2.json > filename3.json
 vim filename3.json
+
 `
 
 ### ///
@@ -21,4 +22,5 @@ vim filename3.json
 < filename3.json jq .
 in2csv filename3.json >  filename3.csv
 csvlook filename3.csv | head
+
 `
