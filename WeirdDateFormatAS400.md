@@ -10,18 +10,18 @@
 991231 --> [99] Year [12] Month [31] Day
 
 ## Change Req_Date to Usable Date
-`
+```
 replace col: Req_Date with: '' on: `{start}1`
 derive value: 20 as: 'Req_Date_Century'
 merge col: Req_Date_Century,Req_Date as: 'Req_Date_full'
 drop col: Req_Date,Req_Date_Century
-`
+```
 
 ---
 ## Change Date Last Invoiced to Usable Date
-`
+```
 replace col: Date_Last_Invoiced with: '' on: `{start}1`
 derive value: 20 as: 'Req_Date_Century'
 merge col: Req_Date_Century,Req_Date as: 'Req_Date_full'
 drop col: Req_Date,Req_Date_Century
-`
+```
